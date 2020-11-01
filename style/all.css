@@ -4,12 +4,19 @@ html, body {
 
 body {
     margin: 0 auto;
+    background-image: url('https://images.unsplash.com/photo-1601379828908-942e5d184b50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    background-color: #d6e0f0;
-    padding: 3px 3px 0px 3px;
+    padding: 10px 3px 0px 10px;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 header a {
@@ -19,11 +26,10 @@ header a {
     padding: 20px 20px;
     margin-right: 3px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1vw;
 }
 
 header a:hover{
-    background-color: #8d93ab;
     border-bottom: 3px solid #8d93ab;
 }
 
@@ -34,18 +40,18 @@ header a.active {
 
 footer {
     padding: 20px 20px;
-    color: #393b44;
-    background-color: #d6e0f0;
+    color: #bbbfca;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
-    float: bottom;
+    font-size: 0.7vw;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 .container {
-    padding: 20px;
+    width: 100%;
+    height: auto;
     display: flex;
     overflow: auto;
-    background-color: #f1f3f8;
     color: #393b44;
 }
