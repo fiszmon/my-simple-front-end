@@ -4,8 +4,9 @@
 }
 
 .left {
+    text-align: center;
     flex: 3;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     margin-left: 5%;
 }
 
