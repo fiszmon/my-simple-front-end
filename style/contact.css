@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+form {
+    overflow: auto;
+    width: 90%;
+    max-width: 1500px;
+    height: auto;
+    background-color: rgba(232, 232, 232, 0.4);
+    display: flex;
+    border-radius: 1vw;
+}
+
+form button {
+    border: none;
+    background-color: rgb(221, 187, 15);
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+form button:hover {
+    background-color: rgba(57, 59, 68, 1);
+    color: #ddbb0f;
+}
+
+input, .message{
+    border: none;
+    padding: 5px 0 5px 0;
+    background: none;
+    border-bottom: 3px solid #ddbb0f;
+    max-width: 250px;
+    font-family: "Arial", serif;
+    font-size: large;
+    font-weight: bold;
+    color: #393b44;
+}
+
+.message {
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+    height: auto;
+    max-width: 1000px;
+}
+
+input:focus, .message:focus{
+    outline: none;
+}
+
+.info {
+    padding: 3%;
+    flex: 1;
+    font-size: larger;
+}
+
+.input-data {
+    padding: 3%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-data button {
+    margin-right: 10px;
+}
+
+.input-data-row{
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.input-data-column {
+    width: 100%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}

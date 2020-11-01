@@ -5,6 +5,7 @@ html, body {
 body {
     margin: 0 auto;
     position: relative;
+
 }
 .all{
     height: 100%;
@@ -12,24 +13,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #393b44;
+    font-family: "Arial", serif;
 }
 .b-ground {
     height: 100%;
     width: 100%;
     position: absolute;
     background-image:
-            url('https://images.unsplash.com/photo-1601379828908-942e5d184b50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+            url('https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.1;
     z-index: -1;
 }
 
 header {
     padding: 10px 3px 0px 10px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 header a {
@@ -39,32 +42,46 @@ header a {
     padding: 20px 20px;
     margin-right: 3px;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: x-large;
 }
 
 header a:hover{
-    border-bottom: 3px solid #8d93ab;
+    border-bottom: 5px solid #ddbb0f;
 }
 
 header a.active {
     font-weight: bold;
-    border-bottom: 3px solid #8d93ab;
+    border-bottom: 5px solid #ddbb0f;
 }
 
 footer {
     padding: 20px 20px;
-    color: #393b44;
     text-align: center;
     text-decoration: none;
-    font-size: 0.7vw;
+    font-size: small;
     font-weight: bold;
-    margin-bottom: 0;
 }
 
 .container {
     width: 100%;
     height: auto;
-    display: flex;
     overflow: auto;
     color: #393b44;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.6s;
+    animation-name: fade;
+    animation-duration: 1.6s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
