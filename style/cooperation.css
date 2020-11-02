@@ -16,6 +16,12 @@
     align-items: center;
     border-radius: 1vw;
 }
+
+.coop:hover {
+    box-shadow: 2px 5px rgba(11,22,22,0.3);
+    background-color:  rgba(150, 150, 150, 0.1);
+}
+
 .logo {
     display: flex;
     overflow: auto;

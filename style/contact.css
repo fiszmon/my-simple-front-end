@@ -14,6 +14,17 @@ form {
     border-radius: 1vw;
 }
 
+.passed {
+    display: none;
+}
+
+.failed {
+    display: block;
+    font-size: small;
+    font-weight: bold;
+    color: #b51010;
+}
+
 input, .message{
     border: none;
     padding: 5px 0 5px 0;

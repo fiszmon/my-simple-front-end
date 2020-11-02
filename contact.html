@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.css"/>
     <link rel="stylesheet" href="style/contact.css"/>
+    <script src="scripts/contact.js"></script>
 </head>
 <body>
 <div class="b-ground"></div>
@@ -17,7 +18,7 @@
         <a href="./cooperation.html">Cooperation</a>
     </header>
     <div class="container">
-        <form>
+        <form onsubmit="on_submit(event)">
             <div class="info">
                 <h2>Contact Information</h2>
                 <span>Want ask about something? <br/>
@@ -40,31 +41,45 @@
             </div>
             <div class="input-data">
                     <div class="input-data-row">
-                        <label class="input-data-column">
-                            <span>Name</span>
-                            <input name="name" type="text" placeholder="Enter your name">
-                            <div id="err_name"></div>
-                        </label>
-                        <label class="input-data-column">
-                            <span>Email</span>
-                            <input name="mail" type="text" placeholder="Enter your email">
-                            <div id="err_mail"></div>
-                        </label>
+                        <div class="input-data-column">
+                            <label class="input-data-column">
+                                <span>Name</span>
+                                <input
+                                        onchange="all_not_empty()"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Enter your name">
+                            </label>
+                            <div id="err_name" class="passed">Each word must have only [a-z] and start with capital letter</div>
+                        </div>
+                        <div class="input-data-column">
+                            <label class="input-data-column">
+                                <span>Email</span>
+                                <input
+                                        onchange="all_not_empty()"
+                                        name="mail" type="text"
+                                        placeholder="Enter your email">
+                            </label>
+                            <div id="err_mail" class="passed">Bad email address</div>
+                        </div>
                     </div>
                     <div class="input-data-row">
-                        <label class="input-data-column">
-                            <span>Message</span>
-                            <textarea
-                                    name="message"
-                                    class="message"
-                                    placeholder="Write your questions here..."
-                                    rows="4"
-                            ></textarea>
-                            <div id="err_mes"></div>
-                        </label>
+                        <div class="input-data-column">
+                            <label class="input-data-column">
+                                <span>Message</span>
+                                <textarea
+                                        name="message"
+                                        class="message"
+                                        onchange="all_not_empty()"
+                                        placeholder="Write your questions here..."
+                                        rows="4"
+                                ></textarea>
+                            </label>
+                            <div id="err_mes" class="passed">Contains only whitespaces</div>
+                        </div>
                     </div>
                     <div class="input-data-row">
-                        <button class="button" type="submit" disabled>Submit</button>
+                        <button id="submit" class="button" type="submit" disabled>Submit</button>
                     </div>
                 </div>
         </form>
