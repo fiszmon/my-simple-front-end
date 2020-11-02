@@ -25,23 +25,26 @@ form {
     color: #b51010;
 }
 
+input {
+    max-width: 250px;
+}
+
 input, .message{
     border: none;
     padding: 5px 0 5px 0;
     background: none;
     border-bottom: 3px solid #ddbb0f;
-    max-width: 250px;
     font-family: "Arial", serif;
     font-size: large;
     color: #393b44;
 }
 
 .message {
+    width: 100%;
     resize: none;
     box-sizing: border-box;
     overflow: auto;
     height: auto;
-    max-width: 1000px;
 }
 
 input:focus, .message:focus{
@@ -76,15 +79,18 @@ input:focus, .message:focus{
     width: 100%;
     padding-top: 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .input-data-column {
+    margin: 10px;
     width: 100%;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .input-data-column:focus-within {
@@ -99,6 +105,12 @@ input:focus, .message:focus{
         text-align: left;
     }
     .input-data-row {
+        flex-direction: row;
         justify-content: flex-end;
+    }
+    .input-data-column {
+        margin: 0;
+        text-align: left;
+        align-items: flex-start;
     }
 }
