@@ -32,16 +32,19 @@ body {
 header {
     padding: 10px 3px 0px 10px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 header a {
-    float: left;
+    max-width: 150px;
     color: #393b44;
     text-align: center;
     padding: 20px 20px;
     margin-right: 3px;
     text-decoration: none;
-    font-size: medium;
+    font-size: large;
 }
 
 header a:hover{
