@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.coop {
+    margin: 20px;
+    background-color:  rgba(150, 150, 150, 0.2);
+    max-width: 400px;
+    min-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 1vw;
+}
+.logo {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+}
+.logo img {
+    margin-top: 10px;
+    width: 60%;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ddbb0f;
+    border-bottom-left-radius: 20px;
+}
+.coop a {
+    padding: 10px;
+    font-size: x-small;
+}

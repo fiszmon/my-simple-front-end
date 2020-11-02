@@ -68,6 +68,25 @@ footer {
     color: #393b44;
 }
 
+.button {
+    border: none;
+    background-color: rgb(221, 187, 15);
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 7px;
+    max-width: 150px;
+}
+
+.button:hover {
+    background-color: rgba(57, 59, 68, 1);
+    color: #ddbb0f;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.6s;

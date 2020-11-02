@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.css"/>
     <link rel="stylesheet" href="style/contact.css"/>
 </head>
@@ -42,46 +43,14 @@
                         <label class="input-data-column">
                             <span>Name</span>
                             <input name="name" type="text" placeholder="Enter your name">
+                            <label id="err_name"></label>
                         </label>
                         <label class="input-data-column">
                             <span>Email</span>
                             <input name="mail" type="text" placeholder="Enter your email">
+                            <label id="err_mail"></label>
                         </label>
                     </div>
-<!--                    <div class="input-data-row">              -->
-<!--                <label class="input-data-column">-->
-<!--                    <span>Last name</span>-->
-<!--                    <input name="l_name" type="text" placeholder="Enter your last name">-->
-<!--                </label>-->
-<!--                        <label class="input-data-column">-->
-<!--                            <span>Phone</span>-->
-<!--                            <input name="f_name" type="text" placeholder="Enter your phone">-->
-<!--                        </label>-->
-<!--                    </div>-->
-
-<!--                    <h3 style="margin-top: 50px" >Field of interests:</h3>-->
-
-<!--                    <div class="input-data-row">-->
-<!--                        <label class="container">One-->
-<!--                            <input type="checkbox" checked="checked">-->
-<!--                            <span class="checkmark"></span>-->
-<!--                        </label>-->
-
-<!--                        <label class="container">Two-->
-<!--                            <input type="checkbox">-->
-<!--                            <span class="checkmark"></span>-->
-<!--                        </label>-->
-
-<!--                        <label class="container">Three-->
-<!--                            <input type="checkbox">-->
-<!--                            <span class="checkmark"></span>-->
-<!--                        </label>-->
-
-<!--                        <label class="container">Four-->
-<!--                            <input type="checkbox">-->
-<!--                            <span class="checkmark"></span>-->
-<!--                        </label>-->
-<!--                    </div>-->
                     <div class="input-data-row">
                         <label class="input-data-column">
                             <span>Message</span>
@@ -91,10 +60,11 @@
                                     placeholder="Write your questions here..."
                                     rows="4"
                             ></textarea>
+                            <label id="err_mes"></label>
                         </label>
                     </div>
                     <div class="input-data-row">
-                        <button type="submit" >Submit</button>
+                        <button class="button" type="submit" disabled>Submit</button>
                     </div>
                 </div>
         </form>
